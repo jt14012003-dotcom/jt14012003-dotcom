@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digital Clock — Jethro</title>
+<link rel="stylesheet" href="clock.css">
+</head>
+<body>
+<header>
+<a href="index.html" class="brand">J<span>•</span>Jethro</a>
+<a href="index.html">← Portfolio</a>
+</header>
+<main>
+<div class="intro">
+<div class="clock-icon">⏰</div>
+<div>
+<p class="eyebrow">TIME ZONE CONVERTER</p>
+<h1>Global <span>Clock</span>.</h1>
+<p>View the current time across different time zones in real-time.</p>
+</div>
+</div>
+
+<div class="controls">
+<button id="toggleFormat" class="btn primary">24-Hour Format</button>
+<button id="toggleAnimated" class="btn">Toggle Animation</button>
+</div>
+
+<div class="clocks-grid">
+<div class="clock-card">
+<div class="clock-header">New York</div>
+<div class="digital-clock" id="clock-ny">00:00:00</div>
+<div class="timezone">UTC-5 / UTC-4 (EDT)</div>
+</div>
+
+<div class="clock-card">
+<div class="clock-header">London</div>
+<div class="digital-clock" id="clock-london">00:00:00</div>
+<div class="timezone">UTC+0 / UTC+1 (BST)</div>
+</div>
+
+<div class="clock-card">
+<div class="clock-header">Tokyo</div>
+<div class="digital-clock" id="clock-tokyo">00:00:00</div>
+<div class="timezone">UTC+9</div>
+</div>
+
+<div class="clock-card">
+<div class="clock-header">Sydney</div>
+<div class="digital-clock" id="clock-sydney">00:00:00</div>
+<div class="timezone">UTC+10 / UTC+11 (AEDT)</div>
+</div>
+
+<div class="clock-card">
+<div class="clock-header">Dubai</div>
+<div class="digital-clock" id="clock-dubai">00:00:00</div>
+<div class="timezone">UTC+4</div>
+</div>
+
+<div class="clock-card">
+<div class="clock-header">Los Angeles</div>
+<div class="digital-clock" id="clock-la">00:00:00</div>
+<div class="timezone">UTC-8 / UTC-7 (PDT)</div>
+</div>
+</div>
+
+<div class="info-section">
+<h2>About This Clock</h2>
+<p>This digital clock displays real-time updates every second for major cities across the globe. Toggle between 12-hour and 24-hour formats, and enable animation effects for a dynamic experience.</p>
+<ul>
+<li>✓ Real-time updates</li>
+<li>✓ Multiple time zones</li>
+<li>✓ 12/24 hour format toggle</li>
+<li>✓ Smooth animations</li>
+<li>✓ Responsive design</li>
+</ul>
+</div>
+</main>
+<footer>
+© <span id="year"></span> Jethro · <a href="https://github.com/jt14012003-dotcom" target="_blank">GitHub</a>
+</footer>
+<script src="clock.js"></script>
+</body>
+</html>
